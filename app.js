@@ -1,4 +1,3 @@
-const carruselItems = document.querySelector(".carrusel-items");
 const carrusel = document.querySelector(".carrusel-items");
 
 const gallery = [
@@ -73,7 +72,7 @@ window.addEventListener("DOMContentLoaded", function() {
             </div>`;
   });
   displayGallery = displayGallery.join("");
-  carruselItems.innerHTML = displayGallery;
+  carrusel.innerHTML = displayGallery;
 
   start(); // Iniciar el slider después de cargar las imágenes
 });
@@ -91,7 +90,7 @@ const start = () => {
     } else if (carrusel.scrollLeft === 0) {
       step *= -1;
     }
-  }, 10);
+  }, 1);
 };
 
 const stop = () => {
