@@ -62,7 +62,6 @@ const gallery = [
     alt: "Gallery Image",
   },
 
-  
 
 ]
 
